@@ -13,9 +13,14 @@ ion-col {
   margin: 0%;
 }
 
+ion-content{
+  --background-color: #f4f2ee;
+}
+
 .contentHeaderGrid {
   display: flex;
   justify-content: center;
+  background-color: #f4f2ee;
 }
 
 .contentHeaderBorder {
