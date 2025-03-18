@@ -29,15 +29,6 @@ ion-content{
   width: 1000px;
   height: 500px;
   border-radius: 5%;
-  // background: hsla(177, 87%, 79%, 1);
-
-  // background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
-
-  // background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
-
-  // background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
-
-  // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#145277", endColorstr="#83D0CB", GradientType=1 );
 }
 
 .circular-image-card {
@@ -99,6 +90,16 @@ ion-card-content {
   font-size: 3.5rem;
 }
 
+.subTitle{
+  width: 400px;
+  position: absolute;
+  top: 34%;
+  margin-inline: 150%;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.0rem;
+}
+
 .messageButton {
   --color: white; /* This sets the text color */
   border-radius: 99px;
@@ -112,25 +113,46 @@ ion-card-content {
 
 
 .messageButton:hover {
-  --color: black; /* This sets the text color */
-  border-radius: 99px;
-  border: 3px solid aqua;
-  background-color: aqua;
-}
-
-.messageButton:hover  ion-icon {
-  color: black; /* Sets icon color */
-}
-
-.messageButton:focus {
   --color: white; /* This sets the text color */
   border-radius: 99px;
   border: 3px solid blue;
   background-color: blue;
 }
 
-.messageButton:focus  ion-icon {
+.messageButton:hover  ion-icon {
   color: white; /* Sets icon color */
+}
+
+.messageButton:active {
+  --color: white; /* This sets the text color */
+  border-radius: 99px;
+  border: 3px solid blue;
+  background-color: blue;
+}
+
+.messageButton:active  ion-icon {
+  color: white; /* Sets icon color */
+}
+
+.countryContainer{
+  height: 70px;
+  width: 500px;
+  position: absolute;
+  top: 45%;
+  // margin-inline: 20%;
+  p{
+    margin-inline: 10%;
+    gap:20px;
+    height: 50px;
+  }
+  ion-button{
+    cursor: pointer;
+    text-transform: none;
+  }
+}
+
+.contactButton:hover{
+  border-bottom: 1px solid blue;
 }
 
 
@@ -150,6 +172,39 @@ ion-card-content {
   opacity: 0; /* Initial state */
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.3s; /* Optional delay */
+}
+
+@media (max-width: 1024px) {
+  .contentHeaderBorder {
+    width: 900px;
+  }
+  img {
+    position: absolute;
+    top: 25%;
+    width: 250px;
+    height: 250px;
+  }
+  .subContentSection {
+    width: 440px;
+  }
+  ion-card-content {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+  }
+  .countryContainer{
+    width: 500px;
+    position: absolute;
+    top: 45%;
+    // margin-inline: 20%;
+    p{
+      margin-inline: 10%;
+    }
+    ion-button{
+      cursor: pointer;
+      text-transform: none;
+    }
+  }
 }
 
 
@@ -181,11 +236,31 @@ ion-card-content {
     transition: color 0.3s ease, font-size 0.3s ease; /* Transition for color and font-size */
     margin-inline: 100%;
   }
+
+  .subTitle{
+    top: 35%;
+    font-size: 1.5rem;
+    color: black;
+    margin-inline: 100%;
+  }
+  .countryContainer{
+    width: 500px;
+    position: absolute;
+    top: 60%;
+    // margin-inline: 20%;
+    p{
+      margin-inline: 1%;
+    }
+    ion-button{
+      cursor: pointer;
+      text-transform: none;
+    }
+  }
   
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .contentHeaderBorder {
     width: 400px;
   }
@@ -204,7 +279,7 @@ ion-card-content {
 
     position: absolute;
     top: 80%;
-    left: 15%;
+    left: 10%;
   }
 
   .headerTitle {
@@ -214,7 +289,25 @@ ion-card-content {
     transition: color 0.3s ease, font-size 0.3s ease; /* Transition for color and font-size */
     margin-inline: 340%;
   }
-  
 
-
+  .subTitle{
+    width: 350px;
+    top: 50%;
+    font-size: 1.0rem;
+    color: black;
+    margin-inline: 80%;
+  }
+  .countryContainer{
+    width: 500px;
+    position: absolute;
+    top: 60%;
+    // margin-inline: 20%;
+    p{
+      margin-inline: 20%;
+    }
+    ion-button{
+      cursor: pointer;
+      text-transform: none;
+    }
+  }
 }

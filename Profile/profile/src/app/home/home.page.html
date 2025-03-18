@@ -11,6 +11,10 @@
         <ion-card class="contentHeaderBorder circular-image-card">
           <ion-card-header class="alignment">
             <ion-card-title class="headerTitle">Profile Picture</ion-card-title>
+            <ion-card-subtitle class="subTitle">Founder WebVeda, Content creator wariCrew, Speaker, Author. Eternal Optimist.</ion-card-subtitle>
+            <div class="countryContainer">
+              <p style="display: flex; align-items: center;">India<ion-button fill="clear" class="contactButton" id="trigger-button">Contact info</ion-button></p>
+            </div>
           </ion-card-header>
            <img src="../../assets/images/pexels-giorgio-de-angelis-482403-1413412.jpg" alt="logo">
 
@@ -27,17 +31,26 @@
 
   <ion-grid class="contentHeaderGrid"> 
     <ion-row>
-      <ion-col sizeLg="6" sizeSm="12" sizeXs="12">
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
         <ion-card class="subContentSection">
           <ion-card-header>
             <ion-card-title>About</ion-card-title>
             <ion-card-content>
-              
+              <p>Over the past 15 years in the internet and technology space, I’ve had the privilege of working on several ventures—founding some, investing in others, and learning from all. 
+
+                Today, as its founder, my main focus is WebVeda, an online school dedicated to helping young professionals develop practical skills in entrepreneurship, career management, and personal growth. We’re proud to have over 430,000 paid students worldwide with an average completion rate of 72%.
+                
+                I also enjoy sharing my experiences and insights about personal finance, startups, careers, and education with a community of more than 14 million people across social media. 
+                
+                In addition, I’ve authored four books, that have gone on to become bestsellers and have sold 1Mn+ copies worldwide across 63 countries. 
+                Do Epic Shit (2022), Get Epic Shit Done (2023), Make Epic Money (2024), Build An Epic Career (2025). 
+                
+                My overarching mission is to empower people to make choices from a point of awareness and not ignorance.</p>
             </ion-card-content>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col sizeLg="6" sizeSm="12" sizeXs="12">
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
         <ion-card class="subContentSection">
           <ion-card-header>
             <ion-card-title>Experience</ion-card-title>
@@ -55,7 +68,9 @@
           <ion-card-header>
             <ion-card-title>Education</ion-card-title>
           </ion-card-header>
-            <ion-card-content></ion-card-content>
+            <ion-card-content>
+              
+            </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
@@ -86,4 +101,9 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ion-popover trigger="trigger-button">
+    <ng-template>
+      <ion-content class="ion-padding">Hello Styled World!</ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>
