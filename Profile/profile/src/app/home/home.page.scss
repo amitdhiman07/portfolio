@@ -156,6 +156,21 @@ ion-card-content {
 }
 
 
+ion-popover{
+  border-radius: 99px;
+  --min-width:400px;
+}
+
+.popover{
+  display: flex;
+  justify-content: center;
+}
+
+ion-item{
+  width:420px;
+}
+
+
 
 @keyframes fadeInUp {
   from {
@@ -204,6 +219,11 @@ ion-card-content {
       cursor: pointer;
       text-transform: none;
     }
+  }
+
+  ion-popover{
+    border-radius: 99px;
+    --min-width:300px;
   }
 }
 
@@ -255,6 +275,11 @@ ion-card-content {
       cursor: pointer;
       text-transform: none;
     }
+  }
+
+  ion-popover{
+    border-radius: 99px;
+    --min-width:300px;
   }
   
 
@@ -309,5 +334,9 @@ ion-card-content {
       cursor: pointer;
       text-transform: none;
     }
+  }
+  ion-popover{
+    border-radius: 99px;
+    --min-width:160px;
   }
 }
