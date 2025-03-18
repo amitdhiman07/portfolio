@@ -99,6 +99,42 @@ ion-card-content {
   font-size: 3.5rem;
 }
 
+.messageButton {
+  --color: white; /* This sets the text color */
+  border-radius: 99px;
+  border: 3px solid red;
+  background-color: red;
+}
+
+.messageButton ion-icon {
+  color: white; /* Sets icon color */
+}
+
+
+.messageButton:hover {
+  --color: black; /* This sets the text color */
+  border-radius: 99px;
+  border: 3px solid aqua;
+  background-color: aqua;
+}
+
+.messageButton:hover  ion-icon {
+  color: black; /* Sets icon color */
+}
+
+.messageButton:focus {
+  --color: white; /* This sets the text color */
+  border-radius: 99px;
+  border: 3px solid blue;
+  background-color: blue;
+}
+
+.messageButton:focus  ion-icon {
+  color: white; /* Sets icon color */
+}
+
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
