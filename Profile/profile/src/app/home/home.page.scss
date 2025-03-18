@@ -58,7 +58,7 @@ img {
   left: 60%;
   width: 300px;
   height: 300px;
-  border-radius: 10%;
+  border-radius: 50%;
   border: 5px solid gray;
 }
 
@@ -97,14 +97,26 @@ ion-card-content {
 
 .headerTitle {
   font-size: 3.5rem;
-  color: black;
-  transition: color 0.3s ease, font-size 0.3s ease; /* Transition for color and font-size */
 }
 
-.headerTitle:hover {
-  color: #007bff; /* Change to desired color on hover */
-  font-size: 2.7rem; /* Slight increase in size on hover */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+.headerTitle {
+  opacity: 0; /* Initial state */
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Optional delay */
+}
+
+
 
 @media (max-width: 768px) {
   .contentHeaderBorder {
@@ -131,12 +143,10 @@ ion-card-content {
     font-size: 2.5rem;
     color: black;
     transition: color 0.3s ease, font-size 0.3s ease; /* Transition for color and font-size */
+    margin-inline: 100%;
   }
   
-  .headerTitle:hover {
-    color: #007bff; /* Change to desired color on hover */
-    font-size: 1.7rem; /* Slight increase in size on hover */
-  }
+
 }
 
 @media (max-width: 430px) {
@@ -146,7 +156,8 @@ ion-card-content {
 
   img {
     position: absolute;
-    top: 30%;
+    top: 2%;
+    left:30%;
     width: 150px;
     height: 150px;
   }
@@ -161,16 +172,13 @@ ion-card-content {
   }
 
   .headerTitle {
-    top: 30%;
+    top: 40%;
     font-size: 1.5rem;
     color: black;
     transition: color 0.3s ease, font-size 0.3s ease; /* Transition for color and font-size */
-    margin-inline: 100%;
+    margin-inline: 340%;
   }
   
-  .headerTitle:hover {
-    color: #007bff; /* Change to desired color on hover */
-    font-size: 1.0rem; /* Slight increase in size on hover */
-  }
+
 
 }
